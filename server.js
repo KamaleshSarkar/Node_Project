@@ -41,7 +41,7 @@ app.use("/admin",adminRouter);
 const port = process.env.PORT || 1994;
 
 mongoose
-  .connect(process.env.dbDriver(), {
+  .connect(process.env.dbDriver, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
